@@ -10,7 +10,6 @@ namespace ConsoleApp
             Enumerable
                 .Range(1, 3)
                 .Select(x => x * 2)
-                .ToList()
                 .ForEach(x => Console.WriteLine(x.ToString()));
         }
     }
