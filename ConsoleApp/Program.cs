@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConsoleApp
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Enumerable
+                .Range(1, 3)
+                .Select(x => x * 2)
+                .ToList()
+                .ForEach(x => Console.WriteLine(x.ToString()));
         }
     }
 }
